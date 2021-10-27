@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>To Do</title>
+        <link rel="Stylesheet" href="ToDoCss.css"/>
+        <script src="ToDoJs.js"></script>
+    </head>
+    <body>
+        <div class="container">
+            <div><button class="button"><img class="icon" src="New folder\dialpad-glyph-vector-icon-600w-1316325731.png"/></button>
+                <span class="title">To Do</span>
+            </div>
+            <div class="center">
+                <form>
+                    <button class="search-button"><img class="search-icon" src="New folder\search.svg"/></button>
+                    <input class="search" type="text" placeholder="" name="search"></input>
+                </form>
+            </div>
+            <div class="right-end">
+                <button class="button"><img class="icon" src="C:\Users\Vignesh\Desktop\New folder\settings.svg"/></button>
+                <button class="button"><img class="icon" src="C:\Users\Vignesh\Desktop\New folder\question.png"/></button>
+                <button class="button"><img class="icon" src="C:\Users\Vignesh\Desktop\New folder\commercial.png"/></button>
+                <button class="button"><img class="icon" src="C:\Users\Vignesh\Desktop\New folder\icons8-male-user-24.png"/></button>
+            </div>
+        </div>
+        <div class="main-container">
+            <div class="left-container">
+                <div id="sidebar">
+                    <div class="gray">
+                        <div class="arrow">
+                            <button onclick="arrow()" class="open"><img class="nav-icon" src="C:\Users\Vignesh\Desktop\New folder\icons8-more-than-24.png"/></button>
+                        </div>
+                        <div id="addtab" class="side-menu">
+                            <a href="#" onclick="MyDay()" class="left-nav nav"><img class="nav-icon" src="brightness.png"/>My Day</a>  
+                            <a href="#" onclick="Important()" class="left-nav nav"><img class="nav-icon" src="star.png"/>Important</a>    
+                            <a href="#" onclick="Planned()" class="left-nav nav"><img class="nav-icon" src="calendar.png"/>Planned</a>
+                            <a href="#" onclick="Assign()" class="left-nav nav"><img class="nav-icon" src="profile.png"/>Assigned to me</a>
+                            <a href="#" onclick="Tasks()" class="left-nav nav"><img class="nav-icon" src="home.png"/>Tasks</a>
+                        </div>
+                        <div id="added-task"></div>
+                        <div id="insert">
+                            <ul id="list-of-new-task", class="list-of-new-task">
+                            </ul>
+                            <div  class="insert">
+                                <button id="add-task" onclick="addTask()">
+                                    <image src="plusicon.png" class="group-icon"/>
+                                </button>
+                                <input type="text" onkeypress="enter(event)" placeholder="New List"  class="newlist" id="list"/>
+                                <button id="add-task" onclick="addTask()">
+                                    <image src="group.png" class="group-icon"/>
+                                </button>
+                            </div>
+                        </div>
+                        <div id="bottom" class="bottom">
+                            <button class="btn"><img class="bottom-icon" src="C:\Users\Vignesh\Desktop\mail.png"/></button>
+                            <button class="btn"><img class="bottom-icon" src="C:\Users\Vignesh\Desktop\calendar.png"/></button>
+                            <button class="btn"><img class="bottom-icon" src="C:\Users\Vignesh\Desktop\group.png"/></button>
+                            <button class="btn"><img class="bottom-icon" src="C:\Users\Vignesh\Desktop\paper-clip.png"/></button>
+                            <button class="btn"><img class="bottom-icon" src="C:\Users\Vignesh\Desktop\check.png"/></button>
+                        </div>
+                    </div>
+                </div>
+                <div class="left-side" id="leftside">
+                    <button class="arrowicon" onclick="arrowexpand()"> > </button> 
+                    <input type="image" src="brightness.png" class="mydayicon" />
+                    <input type="image" src="star.png" class="mydayicon" />
+                    <input type="image" src="calendar.png" class="mydayicon" />
+                    <input type="image" src="profile.png" class="mydayicon" />
+                    <input type="image" src="home.png" class="mydayicon" />
+                    <input type="image" src="C:\Users\Vignesh\Desktop\mail.png" class="mydayicon" />
+                    <input type="image" src="C:\Users\Vignesh\Desktop\calendar.png" class="mydayicon" />
+                    <input type="image" src="C:\Users\Vignesh\Desktop\group.png" class="mydayicon" />
+                    <input type="image" src="C:\Users\Vignesh\Desktop\paper-clip.png" class="mydayicon" />
+                    <input type="image" src="C:\Users\Vignesh\Desktop\check.png" class="mydayicon" />
+                </div>
+            </div>
+            <div class="right-container">
+                <div class="right" id="Data"> MyDay</div>
+                <div onclick="onclicks()">
+                    <button id="add" >+</button>
+                    <input id="right-input"   placeholder="Add a task" >
+                    <div class="Text" id="Textbox"></div>
+                </div>
+            </div>
+        </div>
+    </body>
+</html>
